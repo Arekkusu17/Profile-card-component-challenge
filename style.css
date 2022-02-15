@@ -1,17 +1,12 @@
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 body {
+	background-color: hsl(185, 75%, 39%);
 	background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
 	min-height: 100vh;
-	background-position: top right, left bottom;
 	background-repeat: no-repeat, no-repeat;
-	background-size: contain;
+	background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -25,17 +20,18 @@ body {
 	max-width: 350px;
 	max-height: 590px;
 	overflow: hidden;
-	box-shadow: 10px 10px 20px hsl(0, 0%, 0%, 0.2);
+	box-shadow: 10px 10px 40px hsl(0, 0%, 0%, 0.2);
 }
 
 .basic-info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	margin-top: -3.4rem;
-	padding: ;
-	border-bottom: solid 1px;
+	padding-bottom: 1.8rem;
+
+	border-bottom: solid hsl(0, 0%, 85%) 1.5px;
 }
 
 .pf-picture {
@@ -46,6 +42,8 @@ body {
 .data {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	margin-left: 1.5rem;
 }
 li {
 	list-style: none;
@@ -55,5 +53,33 @@ li {
 	text-align: center;
 }
 
-.description {
+.big-text {
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+	color: hsl(229, 23%, 23%);
 }
+
+span {
+	font-size: 18px;
+	font-weight: 400;
+	color: hsl(0, 0%, 59%);
+}
+
+.small-text {
+	font-size: 14px;
+	font-weight: 400;
+	color: hsl(0, 0%, 59%);
+}
+
+.attribution {
+	margin-top: 4rem;
+	font-size: 11px;
+	text-align: center;
+	color: white;
+}
+.attribution a {
+	color: hsl(228, 45%, 30%);
+	text-decoration: none;
+}
+
